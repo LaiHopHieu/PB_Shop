@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="text-center fs-1">
+                <p class="text-bg-warning"><b>HOME PAGE</b></p>
+                <img width="900px" src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/306663607_202367888802230_4883691496148743298_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=mn8lDDr8isYAX8NVTWM&tn=KYXoldw6NDJztF_H&_nc_ht=scontent.fhan15-2.fna&oh=00_AT8dl6gt0vMWwzct726WyzaSqW2WNyyP251jAJ_5RPUuDQ&oe=633DAA8A" alt=“welcome.img“>
+                <b class="text-danger">Chào mừng bạn, <span class="text-success" id="full-name"></span></b>
+            </div>
+        </div>
+    </div> 
+    <script>
+        $(function () {
+            $('#full-name').text(storage.getItem('key_full_name'));
+        });
+    </script>
+</body>
+
+</html>
